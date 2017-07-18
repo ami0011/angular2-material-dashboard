@@ -1,11 +1,11 @@
-<div>
+<div class="card">
   <h1 x-large class="sample-content">Your Content Here</h1>
 
   <hr>
 
-  <div>
+  <div class="card-block">
     For hot module reloading run
-    <pre>npm run start:hmr</pre>
+    <pre class="bg-info">npm run start:hmr</pre>
   </div>
 
   <hr>
@@ -13,7 +13,7 @@
   <div>
     <h4>Local State</h4>
 
-    <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
+    <form  class="col-md-10 form-group" (ngSubmit)="submitState(localState.value)" autocomplete="off">
 
       <input
         [value]="localState.value"

@@ -291,7 +291,10 @@ module.exports = function (env) {
         minimize: true,
         debug: false,
         options: {
-
+        context: helpers.root('client'),
+          output: {
+            path: helpers.root('dist')
+          },
           /**
            * Html loader advanced options
            *
